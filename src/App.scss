@@ -1,0 +1,42 @@
+.app {
+  --header-height: 56px;
+  max-width: 864px;
+  margin: auto;
+  position: relative;
+
+  header {
+    background: red;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: var(--header-height);
+
+    .header-content {
+      max-width: 864px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 100px 1fr 100px;
+    }
+  }
+
+  .content {
+    margin-top: var(--header-height);
+    background: blue;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+  }
+
+  nav {
+    background: linear-gradient(green, orange);
+  }
+
+  main {
+    background: linear-gradient(yellow, purple);
+    height: 200vh;
+  }
+
+  aside {
+    background: linear-gradient(orange, green);
+  }
+}
